@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: foxned88/mynewsite2
+  branch: main
+  auth_scope: repo
+  client_id: "Ov23licYqvVFlYKanj6U"
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Главная страница"
+        name: "homepage"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Текст", name: "body", widget: "markdown"}
